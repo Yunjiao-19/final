@@ -8,8 +8,11 @@ var firebaseConfig = {
     appId: "1:740124190386:web:2405454f0ad07e2543cbab",
     measurementId: "G-8VQN905DK9"
   };
-  var registerForm = document.getElementById("registerForm");
-  function registerUser(evt) {
+  firebase.initializeApp(firebaseConfig);
+
+var registerForm = document.getElementById("registerForm");
+
+function registerUser(evt) {
     evt.preventDefault();
 
     let formData = new FormData(registerForm);
@@ -19,9 +22,9 @@ var firebaseConfig = {
     }
 
     if (user.password !== user.passwordConfirm) {
-        alert("Passwords do not Match");
+        alert("don't forget your password");
     } else {
-        firebase.auth().createUserWithEmailAndPassword(email,password)
+        firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
             .then(function(result) {
                 console.log(result);
                 window.location.assign("main.html");

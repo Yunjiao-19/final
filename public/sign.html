@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>Sign</title>
+
+        <!-- Include the css file of boostrap  framework-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Include fontawesome tool -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <link rel="stylesheet" href="css/sign.css">
+</head>
+    <body>
+        <div class="continer">
+        <div class="sif">
+            <div class="signtext">
+                You can log in to your existing Ecloth
+                account using Google，or by  <br>
+                provding the email and password for
+                the account.
+            </div>
+            <!-- Login -->
+            <div class="facebook">
+                <!-- <img class="icon" src="images/facebook.png" alt="">
+                    Continue with Facebook -->
+                    <div class="btnlong">
+                        <button id="cg-button" type="button" class="btn btn-primary btn-lg btn-block cg-btn"><i class="fab fa-google-plus-g icon-big"></i>Continue With Google</button>
+                    </div>
+                </div>
+
+            <!-- login end -->
+            <form class="form" id="registerForm"> 
+                <div class="form-group login-form">
+                    <label for="id_email">Email</label>
+                  <input class="form-control" id="login_email" name="email" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted email-help">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group login-form">
+                    <label for="id_password">New Password</label>
+                    <input class="form-control" type="password" id="login_password" name="password" placeholder="Password" aria-label="password" aria-describedby="basic-addon2">
+                </div>
+                <div class="form-group">
+                    <label for="id_passwordConfirm">Confirm Password</label>
+                    <input class="form-control" type="password" id="id_passwordConfirm" name="passwordConfirm">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block signup-btn">Sign up</button>
+            </form>
+
+            <div class="yunbox">
+                <label><input class="yun" name="Fruit" type="radio" value="" />
+                <span class="yuntext">I agree to receive email updates from Lysl by 
+                signing up. I confirm that I have read and accept
+                Lyst's Terms CondLitions Privacy Policy and Cookie
+                Policy.</span>
+                
+                </label>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+       <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+       <!-- Add Firebase products that you want to use -->
+       <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+   
+   
+       <script src="js/signin.js"></script>
+    </html>

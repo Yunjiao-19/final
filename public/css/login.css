@@ -1,0 +1,38 @@
+
+.cg-btn {
+	background-color: wheat;
+    border-color: wheat;
+}
+
+.facebook .icon{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+.body{
+	height: auto;
+	width: auto;
+}
+.continer{
+	height: 818px;
+	background-image: url('../images/back.jpg');
+	background-size: 100%;
+	background-repeat:repeat;
+	display: flexbox;
+	flex-direction: row;
+	justify-content: center;
+}
+.logo{
+	padding-left: 45%;
+}
+.fo{
+	padding-left: 35%;
+	display: flexbox;
+	flex-direction: row;
+	justify-content: center;
+}
+.tou{padding-left: 35%;}
+.card{
+	justify-items: center;
+	width: auto;
+}

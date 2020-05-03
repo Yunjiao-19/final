@@ -1,0 +1,64 @@
+.continer{
+  margin: 0 auto;
+  width: 600px;
+  background-color: pink;
+}
+.weui-tabbar{
+	display: flex;
+	justify-content: space-evenly;
+	width: 600px;
+}
+.choice{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 450px;
+	height: 600px;
+}
+.choice .title{
+	padding-top: 20px;
+	font-size: 20px;
+	letter-spacing:50px;
+}
+.choice .img{
+	display: inline-block;
+	width: 250px;
+    height: 300px;
+    margin-left: 5.5rem;
+    margin-top: 0.6rem;
+}
+.weui-tabbar__icon{
+  display: inline-block;
+  width: 116px;
+  text-align: center;
+}
+.choleft{
+	float: left;
+	width: 220px;
+	height: 200px;
+	text-align: left;
+	/* border:1px solid #111; */
+}
+.choright{
+	float: left;
+	width: 225px;
+	height: 200px;
+}
+
+.weather-item {
+	width: 100px;
+    margin: auto;
+}
+
+.weather-carousel {
+	margin-top: 3rem;
+}
+
+.my-weather {
+	height: 100px;
+	width: 100px;
+	margin-top: 3rem;
+	border-radius: 100%;
+	background-color: lightgrey;
+	padding: 0.8rem;
+}

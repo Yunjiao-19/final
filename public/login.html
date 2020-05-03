@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>Login</title>
+
+    <!-- Include the css file of boostrap  framework-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Include fontawesome tool -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <!-- Your form code will go here! (Bootstrap is already setup for you!) -->
+    <div class="continer">
+      <div class="logo">
+        <img src="images/363-4.png" height="150" alt="logo">
+      </div>
+      
+        <div class="fo">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                      Welcome to your online home!
+                    </div>
+                    <div class="card-body">
+                      <div class="tou">
+                        <img src="images/t1.png" height="100"  alt="head">
+                    </div>
+                      <form class="form" id="loginForm">
+                        <div class="form-group">
+                          <label for="login_email">Email</label>
+                          <input class="form-control" id="login_email" name="email" type="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="login_password">Password</label>
+                          <input class="form-control" type="password" id="login_password" name="password" >
+                          <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt icon-small"></i></button>
+                        </div>
+  
+                      </form>
+                      <div class="facebook">
+                        <!-- <img class="icon" src="images/facebook.png" alt="">
+                            Continue with Facebook -->
+                            <div class="btnlong">
+                                <button id="cg-button" type="button" class="btn btn-primary btn-lg btn-block cg-btn"><i class="fab fa-google-plus-g icon-big"></i>Continue With Google</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+       <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+       <!-- Add Firebase products that you want to use -->
+       <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+   
+       <script src="js/login.js"></script>
+    
+</body>
+</html>
